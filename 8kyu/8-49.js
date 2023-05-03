@@ -16,9 +16,7 @@ function periodIsLate(last, today, cycleLength) {
     let diffDays = Math.round(Math.abs((today.getTime() - last.getTime()) / (oneDay)));
 
     if (diffDays > cycleLength) {
-        return true
-    } else {
-        return false
+        return true;
     }
-
+    return false
 }
